@@ -23,7 +23,7 @@ public class SingleClassDCL {
 
 # 静态内部类
 
-利用了java中`static`和`final`关键字，并且可以实现不同线程同时读取类。
+使用java中`static`和`final`关键字，利用jvm的机制保证了线程安全性。
 
 ```java
 public class StaticInnerSingle {
