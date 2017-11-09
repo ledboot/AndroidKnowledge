@@ -1,4 +1,6 @@
-# 饿汉模式
+#单例模式
+
+## 饿汉模式
 
 缺点：无法对`sIntance`实例进行延迟加载
 
@@ -12,7 +14,7 @@ public class HungrySingle {
 }
 ```
 
-# 懒汉模式
+## 懒汉模式
 
 缺点：多线程并发无法保证实例唯一性
 
@@ -30,7 +32,7 @@ public class LazySingle {
 
 ```
 
-# 双重检查加锁DCL
+## 双重检查加锁DCL
 
 ```java
 public class SingleClassDCL {
@@ -53,7 +55,7 @@ public class SingleClassDCL {
 }
 ```
 
-# 静态内部类
+## 静态内部类
 
 使用java中`static`和`final`关键字，利用jvm的机制保证了线程安全性。
 
